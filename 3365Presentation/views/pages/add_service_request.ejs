@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <h1>New Service Request</h1>
+
+       <form action>  
+
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+
+            <label for="sraddress"> Work Site Address:</label>
+            <input type="text" id="address" name="address"><br><br>
+
+            <label for="cityID"> City:</label>
+            <input type="text" id="city" name="city"><br><br>
+
+            <label for="srState"> State:</label>
+            <input type="text" id="state" name="state"><br><br>
+
+            <label for="empZipcode"> Zipcode:</label>
+            <input type="number" id="zipcode" name="zipcode"><br><br>
+
+            <label for="srType"> Service Request:</label>
+            <select id="srType">
+                <option label="Cleaning Ticket">Cleaning Ticket</option>
+                <option label="Waste Ticket">Waste Ticket</option>
+              </select><br><br>
+              
+            
+
+            <label for="srDetails"> Service Request Details:</label>
+            <input type="text" id="srDetails" name="srDetails"><br><br>
+
+            <label for="empID"> Employee ID:</label>
+            <input type="number" id="empID" name="empID"><br><br>
+            
+            <label for="GroupAssignment"> Group Assignment:</label>
+            <input type="number" id="groupAssignment" name="groupAssignment"><br><br>
+
+
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</main>
+
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>
